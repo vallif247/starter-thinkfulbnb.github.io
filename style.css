@@ -19,10 +19,13 @@ h3 {
 p {
   line-height: 1.5em;
   margin: 0;
+  font-size: 14px;
 }
 
 section {
   padding: 20px;
+  display: flex;
+  flex-direction: column;
 }
 
 section.alternate-background {
@@ -31,7 +34,48 @@ section.alternate-background {
 }
 
 main img {
-  width: 100px;
+  
+}
+
+img {
+  width: 100%;
+}
+
+/* --- Form --- */
+
+button {
+  font-size: 18px;
+  background-color: #ff385c;
+  padding: 15px 130px 15px 130px;
+  margin-top: 10px;
+}
+
+fieldset div {
+  display: flex;
+  justify-content: space-between;
+}
+
+input, select {
+  width: 160px;
+}
+
+fieldset {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+  margin-top: 15px;
+  border-color: #ff385c;
+  
+}
+
+button {
+  color: #fff;
+  border: none;
+}
+
+div label, div input, select {
+  margin: 10px 10px 10px 0px;
+  justify-content: space-around;
 }
 
 /* ---  Groups & Items --- */
@@ -39,16 +83,21 @@ main img {
 .group {
   display: flex;
   flex-direction: column;
+  margin-bottom: 10px;
 }
 
 .item {
   flex: 1;
-  margin: 10px;
+  width: 100%;
+  height: auto;
+  margin: 5px;
 }
 
 .item-double {
+  display: flex;
   flex: 2;
 }
+
 
 /* -------  Navigation ------- */
 
@@ -64,12 +113,27 @@ header {
   color: #fff;
 }
 
+header nav {
+  display: flex;
+  justify-content: center;
+  flex: 1;
+  margin: 10px;
+} 
+
+header nav ul {
+  display: flex;
+  padding-left: 0;
+  list-style: none;
+}
+
 header nav ul li {
+  
   list-style-type: none;
 }
 
 header nav ul li a {
   color: #fff;
+  flex-direction: row;
   text-decoration: none;
   padding: 0 20px 0 0;
 }
@@ -117,3 +181,48 @@ footer p {
 }
 
 /* -------  Media Query ------- */
+
+@media all and (min-width: 480px) {
+  .group {
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-around;
+  }
+
+  ul {
+    justify-content: end;
+  }
+
+  header .group {
+    justify-content: space-around;
+    display: flex;
+    align-items: center;
+  }
+
+  fieldset {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  header {
+  flex-direction: row;
+  width: 100%;
+  }
+
+  header nav {
+    margin: 0;
+    justify-content: end;
+  }
+
+  .logo {
+    font-size: 30px;
+  }
+
+  .item {
+    margin: 5px 5px 5px 5px;
+  }
+
+  button {
+    padding: 10px 40px 10px 40px;
+  }
+}
