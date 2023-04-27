@@ -122,7 +122,6 @@ header nav {
 
 header nav ul {
   display: flex;
-  padding-left: 0;
   list-style: none;
   justify-content: center;
 }
@@ -203,6 +202,7 @@ footer p {
   fieldset {
     flex-direction: row;
     justify-content: space-between;
+    flex-wrap: wrap;
   }
 
   header {
@@ -226,6 +226,7 @@ footer p {
     padding: 10px 40px 10px 40px;
   }
 }
+
 
 
 
