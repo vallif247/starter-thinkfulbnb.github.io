@@ -90,7 +90,7 @@ div label, div input, select {
   flex: 1;
   width: 100%;
   height: auto;
-  margin: 5px;
+  margin-bottom: 10px;
 }
 
 .item-double {
@@ -124,6 +124,7 @@ header nav ul {
   display: flex;
   padding-left: 0;
   list-style: none;
+  justify-content: center;
 }
 
 header nav ul li {
@@ -225,4 +226,6 @@ footer p {
     padding: 10px 40px 10px 40px;
   }
 }
+
+
 
