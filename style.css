@@ -43,24 +43,45 @@ img {
 
 /* --- Form --- */
 
+.form-button {
+  justify-content: center;
+  align-self: center;
+}
+
+.form-item {
+  display: flex;
+  flex: 1;
+  margin-bottom: 20px;
+}
+
+label {
+  font-weight: bold;
+}
+
 button {
-  font-size: 18px;
+  font-size: 24px;
+  display: flex;
+  justify-content: center;
   background-color: #ff385c;
-  padding: 15px 130px 15px 130px;
+  padding: 15px;
   margin-top: 10px;
+  color: #fff;
+  border: none;
 }
 
 fieldset div {
+  display: flex;
   justify-content: space-between;
 }
 
 input, select {
   width: 160px;
+  min-width: 0;
 }
 
 fieldset {
+  min-width: auto;
   display: flex;
-  align-items: center;
   flex-direction: column;
   margin-bottom: 10px;
   margin-top: 15px;
@@ -68,28 +89,22 @@ fieldset {
   
 }
 
-button {
-  color: #fff;
-  border: none;
-}
-
-div label, div input, select {
+/* div label, div input, select {
   margin: 10px 10px 10px 0px;
   justify-content: space-around;
-}
+} */
 
 /* ---  Groups & Items --- */
 
 .group {
   display: flex;
+  width: 100%;
   flex-direction: column;
   margin-bottom: 10px;
 }
 
 .item {
   flex: 1;
-  width: 100%;
-  height: auto;
   margin-bottom: 10px;
 }
 
@@ -111,6 +126,8 @@ header {
   font-family: "Pangolin", cursive;
   font-size: 72px;
   color: #fff;
+  justify-content: center;
+  display: flex;
 }
 
 header nav {
@@ -136,6 +153,7 @@ header nav ul li a {
   flex-direction: row;
   text-decoration: none;
   padding: 0 20px 0 0;
+  margin-right: 0;
 }
 
 header nav ul li a:hover {
@@ -143,30 +161,6 @@ header nav ul li a:hover {
   text-decoration: none;
 }
 
-/* -------  Search Form ------- */
-form {
-  border: 2px solid #ff385c;
-  padding: 10px;
-}
-
-form label {
-  font-weight: bold;
-}
-
-form select,
-form input {
-  margin-bottom: 20px;
-  width: 180px;
-}
-
-form button {
-  background-color: #ff385c;
-  border: none;
-  color: #fff;
-  font-size: 24px;
-  padding: 15px;
-  width: 100%;
-}
 
 /* -------  Footer ------- */
 
@@ -189,6 +183,31 @@ footer p {
   justify-content: space-around;
   }
 
+  .p-two {
+    flex: 2;
+  }
+
+  /*--Form Box--*/
+
+  .form-item {
+    flex-direction: column;
+    min-width: 0;
+    max-width: 150px;
+    padding-left: 10px;
+    padding-right: 20px;
+    padding-top: 10px;
+  }
+
+  input  {
+    width: auto;
+  }
+
+  fieldset div.item {
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+}
+
   ul {
     justify-content: end;
   }
@@ -202,20 +221,21 @@ footer p {
   fieldset {
     flex-direction: row;
     justify-content: space-between;
-    flex-wrap: wrap;
   }
 
   header {
   flex-direction: row;
+  justify-content: space-between;
   }
 
-  header nav {
+  header nav ul{
     margin: 0;
     justify-content: end;
   }
 
   .logo {
     font-size: 30px;
+    align-self: flex-start;
   }
 
   .item {
@@ -224,9 +244,6 @@ footer p {
 
   button {
     padding: 10px 40px 10px 40px;
+    align-items: center;
   }
 }
-
-
-
-
