@@ -37,34 +37,36 @@
       <section id="stay">
         <h2>Find the perfect vacation rental</h2>
         <!-- Create a form here -->
-        <fieldset class="group">
-         <div class="item">
+        <fieldset>
+          <!-- <div class="group"> -->
+         <div class="form-item">
           <label for="location">Location</label>
           <input id="location" placeholder="City, State, Country" type="text" name="location"/>
          </div> 
-         <div class="item">
+         <div class="form-item">
           <label for="arrive">Arrive</label>
           <input type="date" id="arrive" name="arrive"/>
          </div>
-         <div class="item">
+         <div class="form-item">
           <label for="depart">Depart</label>
           <input type="date" id="depart" name="depart"/>
          </div>
-         <div class="item">
+         <div class="form-item">
           <label for="type">Type</label>
-          <select class="item" name="type" id="type" size="1">
+          <select name="type" id="type" size="1">
             <option value="Apartment">Apartment</option>
             <option value="Single room">Single room</option>
-            <option valie="Yacht">Yacht</option>
+            <option value="Yacht">Yacht</option>
             <option value="Tiny house">Tiny house</option>
             <option value="Yurt">Yurt</option>
             <option value="Castle">Castle</option>
             <option value="Houseboat">Houseboat</option>
           </select>
          </div>
-         <div>
+         <div class="form-button">
           <button type="search">Search</button>
          </div>
+        <!-- </div> -->
         </fieldset>
 
 
@@ -90,7 +92,7 @@
             />
           </div>
         <div class="item">
-        <p>
+        <p class="p-two">
           Fusce porta odio nunc, eget pretium massa rutrum sit amet. Etiam
           fringilla aliquam dapibus. Maecenas quis nisi sed turpis aliquam
           porttitor eget ut quam. Sed vel scelerisque ex. Duis in pharetra
@@ -170,4 +172,3 @@
     </footer>
   </body>
 </html>
-
