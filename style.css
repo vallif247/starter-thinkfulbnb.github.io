@@ -5,7 +5,7 @@ body {
 }
 
 h2 {
-  font-size: 26px;
+  font-size: 22px;
   font-weight: 400;
   margin: 0 10px 10px 10px;
   text-align: center;
@@ -31,10 +31,6 @@ section {
 section.alternate-background {
   background-color: #00a699;
   color: #fff;
-}
-
-main img {
-  
 }
 
 img {
@@ -89,11 +85,6 @@ fieldset {
   
 }
 
-/* div label, div input, select {
-  margin: 10px 10px 10px 0px;
-  justify-content: space-around;
-} */
-
 /* ---  Groups & Items --- */
 
 .group {
@@ -109,7 +100,7 @@ fieldset {
 }
 
 .item-double {
-  display: flex;
+  padding-left: 15px;
   flex: 2;
 }
 
@@ -118,7 +109,6 @@ fieldset {
 
 header {
   background-color: #ff385c;
-  padding: 20px 20px 5px 20px;
   text-align: center;
 }
 
@@ -177,14 +167,48 @@ footer p {
 /* -------  Media Query ------- */
 
 @media all and (min-width: 480px) {
+
   .group {
   flex-direction: row;
   width: 100%;
   justify-content: space-around;
   }
 
-  .p-two {
-    flex: 2;
+ .align-center {
+    align-items: center;
+    display: flex;
+  }
+
+  header {
+    flex-direction: row;
+    justify-content: space-between;
+    }
+  
+  header nav ul{
+    margin: 0;
+    justify-content: end;
+  }
+  
+  .logo {
+    font-size: 30px;
+    align-self: auto;
+    padding-left: 10px;
+  }
+  
+  .item {
+    margin: 5px 5px 5px 5px;
+  }
+
+  ul {
+    justify-content: end;
+  }
+
+  header .group {
+    justify-content: space-around;
+    display: flex;
+    align-items: center;
+    margin-bottom: 0;
+    padding: 5px;
   }
 
   /*--Form Box--*/
@@ -198,7 +222,8 @@ footer p {
     padding-top: 10px;
   }
 
-  input  {
+  input, select {
+    min-width: 0;
     width: auto;
   }
 
@@ -206,16 +231,6 @@ footer p {
     display: flex;
     align-content: center;
     flex-direction: column;
-}
-
-  ul {
-    justify-content: end;
-  }
-
-  header .group {
-    justify-content: space-around;
-    display: flex;
-    align-items: center;
   }
 
   fieldset {
@@ -223,27 +238,10 @@ footer p {
     justify-content: space-between;
   }
 
-  header {
-  flex-direction: row;
-  justify-content: space-between;
-  }
-
-  header nav ul{
-    margin: 0;
-    justify-content: end;
-  }
-
-  .logo {
-    font-size: 30px;
-    align-self: flex-start;
-  }
-
-  .item {
-    margin: 5px 5px 5px 5px;
-  }
-
   button {
     padding: 10px 40px 10px 40px;
     align-items: center;
   }
 }
+
+
